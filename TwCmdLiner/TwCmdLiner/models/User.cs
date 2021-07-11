@@ -6,30 +6,14 @@ using System.Threading.Tasks;
 
 namespace TwCmdLiner
 {
-    class User
+    class User : IEquatable<User>
     {
-        private string _nickname;
-        private string _password;
+        public string nickname { get; set; }
+        public string password { get; set; }
 
-        public User(string vNickname, string vPassword) {
-            _nickname = vNickname;
-            _password = vPassword;
-        }
-
-        public string GetNickname() {
-            return _nickname;
-        }
-
-        public void SetNickname(string vNickName) {
-            _nickname = vNickName;
-        }
-
-        public string GetPassword() {
-            return _password;
-        }
-
-        public void SetPassword(string vPassword) {
-            _password = vPassword;
+        public bool Equals(User other)
+        {
+            throw new NotImplementedException();
         }
     }
 }
