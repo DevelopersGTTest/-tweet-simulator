@@ -10,12 +10,19 @@ namespace TwCmdLiner.Mock
 {
     class MockData
     {
-        public List<User> parts = new List<User>();
+        List<User> users = new List<User>();
 
         public List<User> GetUsers() {
-            parts.Add(new User() { nickname = "hackobo", password = "hck" });
-            parts.Add(new User() { nickname = "sam", password = "123" });
-            return parts;
+            users.Add(new User() { nickname = "hackobo", password = "hck" });
+            users.Add(new User() { nickname = "sam", password = "123" });
+            return users;
+        }
+
+        public void showDataMock() {
+            foreach (User u in users) {
+                Console.WriteLine("nick =" + u.nickname);
+                Console.WriteLine("pass =" + u.password);
+            }
         }
 
     }
