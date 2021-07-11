@@ -12,7 +12,7 @@ namespace TwCmdLiner.Mock
     {
         List<User> users = new List<User>();
 
-        public List<User> GetUsers() {
+        public List<User> SetDefaultUsers() {
             users.Add(new User() { nickname = "hackobo", password = "hck" });
             users.Add(new User() { nickname = "sam", password = "123" });
             return users;

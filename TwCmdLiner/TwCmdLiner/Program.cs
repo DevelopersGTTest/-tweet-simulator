@@ -13,8 +13,11 @@ namespace TwCmdLiner
         {
             Console.WriteLine("hello world.....");
             Mock.MockData mock = new Mock.MockData();
-            mock.GetUsers();
-            mock.showDataMock();
+            // fill a defaults objects...
+            mock.SetDefaultUsers();
+            
+            //build login functionality
+
             Console.ReadKey();
         }
     }
