@@ -21,7 +21,7 @@ namespace TwCmdLiner.CmdMenu
             Console.WriteLine("type your password");
             password = Console.ReadLine();
 
-            Console.WriteLine(" your typing")
+            Console.WriteLine(" your typing nick " + nickname + " your passs " + password);
 
             Console.ReadKey();
         }
