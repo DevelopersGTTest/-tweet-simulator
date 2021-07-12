@@ -12,13 +12,8 @@ namespace TwCmdLiner
         static void Main(string[] args)
         {
             Console.WriteLine("hello world.....");
-            Mock.MockData mock = new Mock.MockData();
-            // fill a defaults objects...
-            mock.SetDefaultUsers();
-            
-            //build login functionality
-
-            Console.ReadKey();
+            CmdMenu.Login login = new CmdMenu.Login();
+            login.AccessUser();
         }
     }
 }
