@@ -8,20 +8,32 @@ namespace TwCmdLiner.CmdMenu
 {
     class Login
     {
-        string nickname;
-        string password;
+        string vNickname;
+        string vPassword;
         public void AccessUser() {
             Mock.MockData mock = new Mock.MockData();
             // fill a defaults objects...
             mock.SetDefaultUsers();
 
             Console.WriteLine("type your nickname");
-            nickname = Console.ReadLine();
+            vNickname = Console.ReadLine();
 
             Console.WriteLine("type your password");
-            password = Console.ReadLine();
+            vPassword =  Console.ReadLine();
 
-            Console.WriteLine(" your typing nick " + nickname + " your passs " + password);
+            User usrFind = mock.SetDefaultUsers()
+                .Where(u => u.nickname == vNickname)
+                .Where(u => u.password == vPassword)
+                .FirstOrDefault();
+
+            if (usrFind != null ) {
+                Console.WriteLine("finded " + usrFind.nickname);
+            } else {
+                Console.WriteLine("not finded...");
+            }
+            
+
+            //Console.WriteLine(" your typing nick " + nickname + " your passs " + password);
 
             Console.ReadKey();
         }
