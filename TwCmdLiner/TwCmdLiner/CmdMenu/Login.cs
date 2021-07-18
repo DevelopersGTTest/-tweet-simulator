@@ -27,14 +27,11 @@ namespace TwCmdLiner.CmdMenu
                 .FirstOrDefault();
 
             if (usrFind != null ) {
-                Console.WriteLine("finded " + usrFind.nickname);
+                Prompt prm = new Prompt();
+                prm.ReceivedData(usrFind);
             } else {
                 Console.WriteLine("not finded...");
             }
-            
-
-            //Console.WriteLine(" your typing nick " + nickname + " your passs " + password);
-
             Console.ReadKey();
         }
     }
