@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="CmdMenu\Login.cs" />
     <Compile Include="CmdMenu\Prompt.cs" />
+    <Compile Include="Enums\OptionTypes.cs" />
     <Compile Include="Mock\MockData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
