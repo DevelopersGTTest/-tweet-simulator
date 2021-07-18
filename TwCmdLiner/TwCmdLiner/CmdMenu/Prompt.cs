@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TwCmdLiner.Enums;
 
 namespace TwCmdLiner.CmdMenu
 {
@@ -32,7 +31,7 @@ namespace TwCmdLiner.CmdMenu
         }
 
         public void showMenuBySelection(int selection) {
-            if (Types.USERS.Equals(selection)) {
+            if (selection == (int) Types.USERS) {
                 Console.WriteLine("you have selected user");
             } else {
                 Console.WriteLine("you have selected tweet");
