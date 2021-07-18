@@ -19,18 +19,24 @@ namespace TwCmdLiner.CmdMenu
         public void ReceivedData(User user) {
             Console.WriteLine("hello there..." + user.nickname );
             Console.WriteLine("Select your operation");
-            Console.WriteLine("2. Users");
-            Console.WriteLine("3. Tweets");
+            Console.WriteLine("1. Users");
+            Console.WriteLine("2. Tweets");
 
             opt = Int16.Parse(Console.ReadLine());
 
             if (Enum.IsDefined(typeof(Types), opt)) {
-                Console.WriteLine("IS VALID.....");
+                showMenuBySelection(opt);
             } else {
-                Console.WriteLine("not finded");
+                Console.WriteLine("Action not finded...");
             }
+        }
 
-            Console.WriteLine("OPT SELECTED IS " + opt);
+        public void showMenuBySelection(int selection) {
+            if (Types.USERS.Equals(selection)) {
+                Console.WriteLine("you have selected user");
+            } else {
+                Console.WriteLine("you have selected tweet");
+            }
         }
 
     }
