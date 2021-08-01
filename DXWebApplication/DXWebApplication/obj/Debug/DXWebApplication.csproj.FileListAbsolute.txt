@@ -1,0 +1,95 @@
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\DXWebApplication.dll.config
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\DXWebApplication.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\DXWebApplication.pdb
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\DevExpress.Data.v17.2.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\DevExpress.Printing.v17.2.Core.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\DevExpress.RichEdit.v17.2.Core.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\DevExpress.RichEdit.v17.2.Export.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\DevExpress.Web.ASPxThemes.v17.2.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\DevExpress.Web.v17.2.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\DevExpress.Office.v17.2.Core.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\DevExpress.Pdf.v17.2.Core.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\DevExpress.Images.v17.2.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\DevExpress.Data.v17.2.xml
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\DevExpress.RichEdit.v17.2.Core.xml
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\DevExpress.Printing.v17.2.Core.xml
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\DevExpress.Web.v17.2.xml
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\DevExpress.Office.v17.2.Core.xml
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\DevExpress.Pdf.v17.2.Core.xml
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\de\DevExpress.Data.v17.2.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\es\DevExpress.Data.v17.2.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\ja\DevExpress.Data.v17.2.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\ru\DevExpress.Data.v17.2.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\de\DevExpress.Printing.v17.2.Core.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\es\DevExpress.Printing.v17.2.Core.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\ja\DevExpress.Printing.v17.2.Core.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\ru\DevExpress.Printing.v17.2.Core.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\de\DevExpress.Web.v17.2.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\es\DevExpress.Web.v17.2.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\ja\DevExpress.Web.v17.2.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\ru\DevExpress.Web.v17.2.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\de\DevExpress.Office.v17.2.Core.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\es\DevExpress.Office.v17.2.Core.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\ja\DevExpress.Office.v17.2.Core.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\ru\DevExpress.Office.v17.2.Core.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\de\DevExpress.Pdf.v17.2.Core.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\es\DevExpress.Pdf.v17.2.Core.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\ja\DevExpress.Pdf.v17.2.Core.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\ru\DevExpress.Pdf.v17.2.Core.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\obj\Debug\DXWebApplication.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\obj\Debug\DXWebApplication.pdb
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\obj\Debug\DXWebApplication.dll.licenses
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\DevExpress.Web.Resources.v17.2.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\de\DevExpress.Web.Resources.v17.2.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\es\DevExpress.Web.Resources.v17.2.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\ja\DevExpress.Web.Resources.v17.2.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\bin\ru\DevExpress.Web.Resources.v17.2.resources.dll
+d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\obj\Debug\DXWebApplication.csprojResolveAssemblyReference.cache
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\DXWebApplication.dll.config
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\DXWebApplication.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\DXWebApplication.pdb
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\DevExpress.Office.v17.2.Core.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\DevExpress.Pdf.v17.2.Core.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\DevExpress.Images.v17.2.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\DevExpress.Data.v17.2.xml
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\DevExpress.RichEdit.v17.2.Core.xml
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\DevExpress.Printing.v17.2.Core.xml
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\DevExpress.Web.v17.2.xml
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\DevExpress.Office.v17.2.Core.xml
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\DevExpress.Pdf.v17.2.Core.xml
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\de\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\es\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\ja\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\ru\DevExpress.Web.Resources.v17.2.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\de\DevExpress.Data.v17.2.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\es\DevExpress.Data.v17.2.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\ja\DevExpress.Data.v17.2.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\ru\DevExpress.Data.v17.2.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\de\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\es\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\ja\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\ru\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\de\DevExpress.Web.v17.2.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\es\DevExpress.Web.v17.2.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\ja\DevExpress.Web.v17.2.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\ru\DevExpress.Web.v17.2.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\de\DevExpress.Office.v17.2.Core.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\es\DevExpress.Office.v17.2.Core.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\ja\DevExpress.Office.v17.2.Core.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\ru\DevExpress.Office.v17.2.Core.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\de\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\es\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\ja\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\bin\ru\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\obj\Debug\DXWebApplication.csprojResolveAssemblyReference.cache
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\obj\Debug\DXWebApplication.dll.licenses
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\obj\Debug\DXWebApplication.dll
+C:\Users\50241\Documents\university\8vosemestre\desarrollo-web\tarea-1-proyecto-pasado-por-felix\DXWebApplication\DXWebApplication\obj\Debug\DXWebApplication.pdb

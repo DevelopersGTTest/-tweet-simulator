@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <item Text="Home" NavigateUrl="#" />
+  <group Text="Mantenimientos">
+    <item Text="Cliente" NavigateUrl="~/WebForms/Mantenimientos/Cliente/WebCliente.aspx"  />
+    <item Text="Producto" NavigateUrl="~/WebForms/Mantenimientos/Producto/WebProducto.aspx"  />
+  </group>
+  <group Text="Procesos">
+    <item Text="Factura" NavigateUrl="~/WebForms/Procesos/Factura/WebFactura.aspx"  />    
+  </group>
+
+  
+</items>

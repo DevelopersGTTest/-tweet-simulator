@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Analyzer\Commands.cs" />
     <Compile Include="CmdMenu\Login.cs" />
     <Compile Include="CmdMenu\Prompt.cs" />
     <Compile Include="Mock\MockData.cs" />

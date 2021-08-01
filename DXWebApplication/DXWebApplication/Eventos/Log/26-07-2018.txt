@@ -1,0 +1,18 @@
+
+Log del Error: 
+26/07/2018 14:51:34
+Error en: http://localhost:61908/WebForms/Mantenimientos/Cliente/WebCliente.aspx | Mensaje de Error: System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en DXWebApplication.WebForms.Mantenimientos.Cliente.WebCliente.dxGridCliente_RowUpdating(Object sender, ASPxDataUpdatingEventArgs e) en d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\WebForms\Mantenimientos\Cliente\WebCliente.aspx.cs:línea 87 | Stack:    en DXWebApplication.WebForms.Mantenimientos.Cliente.WebCliente.dxGridCliente_RowUpdating(Object sender, ASPxDataUpdatingEventArgs e) en d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\WebForms\Mantenimientos\Cliente\WebCliente.aspx.cs:línea 87
+__________________________
+
+Log del Error: 
+26/07/2018 14:51:50
+Error en: http://localhost:61908/WebForms/Mantenimientos/Cliente/WebCliente.aspx | Mensaje de Error: System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en DXWebApplication.WebForms.Mantenimientos.Cliente.WebCliente.dxGridCliente_RowUpdating(Object sender, ASPxDataUpdatingEventArgs e) en d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\WebForms\Mantenimientos\Cliente\WebCliente.aspx.cs:línea 87 | Stack:    en DXWebApplication.WebForms.Mantenimientos.Cliente.WebCliente.dxGridCliente_RowUpdating(Object sender, ASPxDataUpdatingEventArgs e) en d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\WebForms\Mantenimientos\Cliente\WebCliente.aspx.cs:línea 87
+__________________________
+
+Log del Error: 
+26/07/2018 14:51:52
+Error en: http://localhost:61908/WebForms/Mantenimientos/Cliente/WebCliente.aspx | Mensaje de Error: System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en DXWebApplication.WebForms.Mantenimientos.Cliente.WebCliente.dxGridCliente_RowUpdating(Object sender, ASPxDataUpdatingEventArgs e) en d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\WebForms\Mantenimientos\Cliente\WebCliente.aspx.cs:línea 87 | Stack:    en DXWebApplication.WebForms.Mantenimientos.Cliente.WebCliente.dxGridCliente_RowUpdating(Object sender, ASPxDataUpdatingEventArgs e) en d:\documentos\visual studio 2015\Projects\DXWebApplication\DXWebApplication\WebForms\Mantenimientos\Cliente\WebCliente.aspx.cs:línea 87
+__________________________
