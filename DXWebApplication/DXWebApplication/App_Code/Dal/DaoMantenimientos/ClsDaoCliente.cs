@@ -60,7 +60,7 @@ namespace DXWebApplication.App_Code.Dal.DaoMantenimientos
             return ExecuteSql(strSql);
         }
 
-        //Estructura de un metodo para ejecutar una accion INSERT, UPDATE, DELETE en nuestra BD
+        //e
         public bool ExecuteSql(string strSql)
         {
             try
