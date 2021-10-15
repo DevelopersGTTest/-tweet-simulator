@@ -26,7 +26,7 @@ namespace TwCmdLiner.CmdMenu
             if (Enum.IsDefined(typeof(Types), opt)) {
                 showMenuBySelection(opt);
             } else {
-                Console.WriteLine("Action not finded...");
+                Console.WriteLine("Action not finded....");
             }
         }
 
