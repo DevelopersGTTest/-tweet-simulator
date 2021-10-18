@@ -10,8 +10,8 @@ namespace SampleEntityFramework
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("launch entity framework...");
-            Console.Read();
+            Console.WriteLine("test...");
+            
         }
     }
 }

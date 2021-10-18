@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SampleEntityFrameworkModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="PET">
+          <Key>
+            <PropertyRef Name="PET_ID" />
+          </Key>
+          <Property Name="PET_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PET_NAME" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="AGE" Type="int" Nullable="false" />
+          <Property Name="PET_TYPE_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PET_TYPE">
+          <Key>
+            <PropertyRef Name="PET_TYPE_ID" />
+          </Key>
+          <Property Name="PET_TYPE_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BREED" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <Association Name="FK__PET__PET_TYPE_ID__38996AB5">
+          <End Role="PET_TYPE" Type="Self.PET_TYPE" Multiplicity="1" />
+          <End Role="PET" Type="Self.PET" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PET_TYPE">
+              <PropertyRef Name="PET_TYPE_ID" />
+            </Principal>
+            <Dependent Role="PET">
+              <PropertyRef Name="PET_TYPE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SampleEntityFrameworkModelStoreContainer">
+          <EntitySet Name="PET" EntityType="Self.PET" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PET_TYPE" EntityType="Self.PET_TYPE" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__PET__PET_TYPE_ID__38996AB5" Association="Self.FK__PET__PET_TYPE_ID__38996AB5">
+            <End Role="PET_TYPE" EntitySet="PET_TYPE" />
+            <End Role="PET" EntitySet="PET" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SampleEntityFrameworkModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="PET">
+          <Key>
+            <PropertyRef Name="PET_ID" />
+          </Key>
+          <Property Name="PET_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PET_NAME" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AGE" Type="Int32" Nullable="false" />
+          <Property Name="PET_TYPE_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="PET_TYPE" Relationship="Self.FK__PET__PET_TYPE_ID__38996AB5" FromRole="PET" ToRole="PET_TYPE" />
+        </EntityType>
+        <EntityType Name="PET_TYPE">
+          <Key>
+            <PropertyRef Name="PET_TYPE_ID" />
+          </Key>
+          <Property Name="PET_TYPE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BREED" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="PETs" Relationship="Self.FK__PET__PET_TYPE_ID__38996AB5" FromRole="PET_TYPE" ToRole="PET" />
+        </EntityType>
+        <Association Name="FK__PET__PET_TYPE_ID__38996AB5">
+          <End Role="PET_TYPE" Type="Self.PET_TYPE" Multiplicity="1" />
+          <End Role="PET" Type="Self.PET" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PET_TYPE">
+              <PropertyRef Name="PET_TYPE_ID" />
+            </Principal>
+            <Dependent Role="PET">
+              <PropertyRef Name="PET_TYPE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SampleEntityFrameworkEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="PETs" EntityType="Self.PET" />
+          <EntitySet Name="PET_TYPE" EntityType="Self.PET_TYPE" />
+          <AssociationSet Name="FK__PET__PET_TYPE_ID__38996AB5" Association="Self.FK__PET__PET_TYPE_ID__38996AB5">
+            <End Role="PET_TYPE" EntitySet="PET_TYPE" />
+            <End Role="PET" EntitySet="PETs" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SampleEntityFrameworkModelStoreContainer" CdmEntityContainer="SampleEntityFrameworkEntities">
+          <EntitySetMapping Name="PETs">
+            <EntityTypeMapping TypeName="SampleEntityFrameworkModel.PET">
+              <MappingFragment StoreEntitySet="PET">
+                <ScalarProperty Name="PET_ID" ColumnName="PET_ID" />
+                <ScalarProperty Name="PET_NAME" ColumnName="PET_NAME" />
+                <ScalarProperty Name="AGE" ColumnName="AGE" />
+                <ScalarProperty Name="PET_TYPE_ID" ColumnName="PET_TYPE_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PET_TYPE">
+            <EntityTypeMapping TypeName="SampleEntityFrameworkModel.PET_TYPE">
+              <MappingFragment StoreEntitySet="PET_TYPE">
+                <ScalarProperty Name="PET_TYPE_ID" ColumnName="PET_TYPE_ID" />
+                <ScalarProperty Name="BREED" ColumnName="BREED" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
