@@ -1,0 +1,31 @@
+main {
+    margin-top: 3rem;
+    ;
+}
+main .card {
+    margin-bottom: 2rem;
+}
+@media only screen and (max-width: 768px) {
+    .read-more {
+        text-align: center;
+    }
+}
+footer.page-footer a {
+    color: #323232;
+}
+footer.page-footer {
+    background-color: #dfe9f0;
+    margin-top: 2rem;
+    color: black;
+}
+.navbar .btn-group .dropdown-menu a:hover {
+    color: #000 !important;
+}
+
+.navbar .btn-group .dropdown-menu a:active {
+    color: #fff !important;
+}
+
+body{
+    background-color: #0000;
+}

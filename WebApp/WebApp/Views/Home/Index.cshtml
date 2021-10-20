@@ -2,30 +2,31 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+<main>
+    <div class="container" style="max-width: 1000px; padding: 43px;">
+        <section class="form-dark">
+            <div class="card card-image" style="background-image: url('recursos/styles/img/fondo.jpg')">
+                <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+                    <div class="text-center">
+                        <h3 class="white-text mb-5 mt-4 font-bold"><strong>Iniciar</strong> <a class="green-text font-bold"><strong>Sesión</strong></a></h3>
+                    </div>
+                    <form action="index.php" method="post">
+                        <div class="md-form">
+                            <input placeholder="" type="text" id="username" name="username" class="form-control white-text" required>
+                            <label for="username">Nombre de usuario</label>
+                        </div>
+                        <div class="md-form pb-3">
+                            <input placeholder="" type="password" id="password" id="password" name="password" class="form-control white-text" required>
+                            <label for="password">Contraseña</label>
+                        </div>
+                        <div class="row d-flex align-items-center mb-4">
+                            <div class="text-center mb-3 col-md-12">
+                                <button type="submit" value="Ingresar" class="btn btn-success btn-block btn-rounded z-depth-1">Iniciar Sesión</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+</main>
