@@ -8,7 +8,6 @@
     @Styles.Render("~/Content/styles/css/mdb.min.css")
     @Styles.Render("~/Content/styles/css/style.css")
     @Styles.Render("~/Content/styles/hck.css")
-    @Styles.Render("~/Content/styles/js/jquery-3.2.1.min.js")
     @Styles.Render("~/Content/styles/js/popper.min.js")
 </head>
 <body>
@@ -19,5 +18,8 @@
             <p>&copy; @DateTime.Now.Year - Sistema Parroquial</p>
         </footer>
     </div>
+    
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
 </body>
 </html>

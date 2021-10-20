@@ -11,7 +11,7 @@
                     <div class="text-center">
                         <h3 class="white-text mb-5 mt-4 font-bold"><strong>Iniciar</strong> <a class="green-text font-bold"><strong>Sesión</strong></a></h3>
                     </div>
-                    <form action="index.php" method="post">
+                    <form id="frm">
                         <div class="md-form">
                             <input placeholder="" type="text" id="username" name="username" class="form-control white-text" required>
                         </div>
@@ -28,3 +28,27 @@
             </div>
         </section>
 </main>
+
+
+@section scripts {
+<script>
+    $(document).ready(function () {
+        $("frm").submit(function (e) {
+            e.preventDefault();
+
+            url = "@Url.Content("~/Home/Access")"
+            params = $(this).serialize();
+
+            $.post(url, params, function (data) {
+
+                if (data == "1") {
+                    document.location.href = "@Url.Content("~/")";
+                } else {
+                     alert(data)
+                }
+
+            })
+        })
+    })
+</script>    
+}
