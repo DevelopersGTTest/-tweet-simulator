@@ -13,7 +13,12 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="#"> @ViewBag.Message <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Configuraciones</a>
+                @{
+                    if (ViewBag.IsAdmin)
+                    {
+                        <a class="nav-item nav-link" href="#">Configuraciones</a>
+                    }
+                }
             </div>
         </div>
         <form class="form-inline" action="#">
