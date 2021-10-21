@@ -2,11 +2,17 @@
     ViewBag.Title = "Home Page";
 }
 
+<script src="https://unpkg.com/sweetalert2@7.17.0/dist/sweetalert2.all.js"></script>
+
 @{
     if (!string.IsNullOrEmpty(ViewBag.Message))
     {
         <script>
-                alert("@ViewBag.Message")
+            swal({
+                title: '¡Acceso Denegado!',
+                text: "@ViewBag.Message",
+                type: 'error',
+            });
         </script>
     }
 }
