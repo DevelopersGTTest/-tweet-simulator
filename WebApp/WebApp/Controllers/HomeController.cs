@@ -32,13 +32,19 @@ namespace WebApp.Controllers
                         return RedirectToAction("Index", "Panel");
                     } else
                     {
-                        return Index("Usuario / Password Incorrectos");
+                        return RedirectToAction("Index", new { message = "Usuario / Password Incorrectos" });
                     }
                 }
 
             } else {
-                return Index("Completa los campos para acceder");
+                return RedirectToAction("Index", new { message = "Invalid Form" });
             }
+        }
+
+        [Authorize]
+        public ActionResult LogOut() {
+            Session.Remove("User");
+            return RedirectToAction("Index");
         }
 
     }
