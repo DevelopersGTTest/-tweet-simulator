@@ -15,6 +15,7 @@ namespace WebApp.Controllers
             return View();
         }
 
+        [HttpPost]
         public ActionResult Login(string username, string password) {
 
             if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(password))

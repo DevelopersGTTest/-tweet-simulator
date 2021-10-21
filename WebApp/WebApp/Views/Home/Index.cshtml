@@ -2,24 +2,16 @@
     ViewBag.Title = "Home Page";
 }
 
-<script src="https://unpkg.com/sweetalert2@7.17.0/dist/sweetalert2.all.js"></script>
+@{
+    if (!string.IsNullOrEmpty(ViewBag.Message))
+    {
+        <script>
+                alert("@ViewBag.Message")
+        </script>
+    }
+}
 
 <main>
-
-    @{
-        if (!string.IsNullOrEmpty(ViewBag.Message))
-        {
-            <script>
-                swal({
-                    title: '¡Acceso Denegado!',
-                    text:  "@ViewBag.Message",
-                    type: 'error',
-                });
-            </script>
-        }
-    }
-
-
     <div class="container" style="max-width: 1000px; padding: 43px;">
         <section class="form-dark">
             <div class="card card-image" style="background-image: url('../../Content/styles/img/fondo.jpg')">
@@ -43,4 +35,5 @@
                 </div>
             </div>
         </section>
+    </div>
 </main>

@@ -1,0 +1,99 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light white lighten-3 sticky ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Ayuda</a>
+                <a class="nav-item nav-link" href="#">Configuraciones</a>
+            </div>
+        </div>
+        <form class="form-inline" action="#">
+
+            <button class="btn btn-danger btn-sm my-0" type="submit">Salir</button>
+        </form>
+
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <div class="row wow fadeIn" data-wow-delay="0.2s">
+            <div class="col-md-12">
+                <h1 class="h1-responsive" style="color: white;">
+                    Administrar
+                    <small class="text-muted">sacramentos</small>
+                </h1>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-5 wow fadeIn" data-wow-delay="0.2s">
+
+            <div class="col-lg-6">
+                <div class="card">
+                    <img class="img-fluid" src="~/Content/styles/img/bautizo.jpg" alt="bautizo" width="600px" height="300px">
+                    <div class="card-body">
+                        <h4 class="card-title">Bautismo</h4>
+                        <p class="card-text">Crea, edita, elimina registros y genera reportes para imprimirlos.</p>
+                        <a href="bautizmo/bautizmo.php" class="btn btn-deep-purple">Administrar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s">
+                <div class="card">
+                    <img class="img-fluid" src="~/Content/styles/img/intencion.png" alt="intencionmisa">
+                    <div class="card-body">
+                        <h4 class="card-title">Intenciones de misa</h4>
+                        <p class="card-text">Crea, edita, elimina registros y genera reportes para imprimirlos.</p>
+                        <a href="intenmisa/intenmisa.php" class="btn btn-deep-orange">Administrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 wow fadeIn" data-wow-delay="0.2s">
+
+            <div class="col-lg-6">
+                <div class="card">
+                    <img class="img-fluid" src="~/Content/styles/img/casamiento.jpg" alt="casamiento">
+                    <div class="card-body">
+                        <h4 class="card-title">Matrimonio</h4>
+                        <p class="card-text">Crea, edita, elimina registros y genera reportes para imprimirlos.</p>
+                        <a href="matrimonio/matrimonio.php" class="btn btn-elegant">Administrar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card">
+                    <img class="img-fluid" src="~/Content/styles/img/confirmacion.jpg" alt="confirmacion">
+                    <div class="card-body">
+                        <h4 class="card-title">Confirmación</h4>
+                        <p class="card-text">Crea, edita, elimina registros y genera reportes para imprimirlos.</p>
+                        <a href="confirmacion/confirmacion.php" class="btn btn-dark-green">Administrar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card">
+                    <img class="img-fluid" src="~/Content/styles/img/primera.jpg" alt="imagen pendiente :(">
+                    <div class="card-body">
+                        <h4 class="card-title">Primera Comunión</h4>
+                        <p class="card-text">Crea, edita, elimina registros y genera reportes para imprimirlos.</p>
+                        <a href="primeracomunion/pcomunion.php" class="btn btn-deep-purple">Administrar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+    </div>
+</main>
