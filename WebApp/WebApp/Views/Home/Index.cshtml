@@ -2,8 +2,24 @@
     ViewBag.Title = "Home Page";
 }
 
+<script src="https://unpkg.com/sweetalert2@7.17.0/dist/sweetalert2.all.js"></script>
 
 <main>
+
+    @{
+        if (!string.IsNullOrEmpty(ViewBag.Message))
+        {
+            <script>
+                swal({
+                    title: '¡Acceso Denegado!',
+                    text:  "@ViewBag.Message",
+                    type: 'error',
+                });
+            </script>
+        }
+    }
+
+
     <div class="container" style="max-width: 1000px; padding: 43px;">
         <section class="form-dark">
             <div class="card card-image" style="background-image: url('../../Content/styles/img/fondo.jpg')">
@@ -11,7 +27,7 @@
                     <div class="text-center">
                         <h3 class="white-text mb-5 mt-4 font-bold"><strong>Iniciar</strong> <a class="green-text font-bold"><strong>Sesión</strong></a></h3>
                     </div>
-                    <form id="frm">
+                    <form action="/Home/Login" method="post">
                         <div class="md-form">
                             <input placeholder="" type="text" id="username" name="username" class="form-control white-text" required>
                         </div>
@@ -28,27 +44,3 @@
             </div>
         </section>
 </main>
-
-
-@section scripts {
-<script>
-    $(document).ready(function () {
-        $("frm").submit(function (e) {
-            e.preventDefault();
-
-            url = "@Url.Content("~/Home/Access")"
-            params = $(this).serialize();
-
-            $.post(url, params, function (data) {
-
-                if (data == "1") {
-                    document.location.href = "@Url.Content("~/")";
-                } else {
-                     alert(data)
-                }
-
-            })
-        })
-    })
-</script>    
-}
