@@ -1,0 +1,66 @@
+﻿@model  List<WebApp.Models.ViewModels.ListUserViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light white lighten-3 sticky ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#"> @ViewBag.Message <span class="sr-only">(current)</span></a>
+            </div>
+        </div>
+        <form class="form-inline" action="#">
+            <a href="/User/BackPanel" class="btn btn-danger btn-sm my-0" type="submit">Regresar</a>
+        </form>
+
+    </nav>
+</header>
+
+<!--divider-->
+<div style="height: 30px" ></div>
+<!--divider-->
+<div class="container" style="background: white; top: 100px; height: 600px; width: 910px; border-radius: 10px;" >
+    <div class="container">
+        <h2>Usuarios</h2>
+        <a href="" class="btn btn-success">Crear un nuevo registro</a>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Username</th>
+                <th scope="col">Rol</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var u in Model)
+            {
+                <tr>
+                    <th scope="row">@u.id_user</th>
+                    <td>@u.nombre</td>
+                    <td>@u.apellido</td>
+                    <td>@u.username</td>
+                    @{ 
+                        if (u.id_rol == 1)
+                        {
+                            <td>admin</td>
+                        }
+                        else
+                        {
+                            <td>digitador</td>
+                        }
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

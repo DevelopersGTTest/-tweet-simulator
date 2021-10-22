@@ -10,7 +10,6 @@ namespace WebApp.Controllers
    
     public class PanelController : Controller
     {
-        
 
         // GET: Panel
         public ActionResult Index()
@@ -28,5 +27,10 @@ namespace WebApp.Controllers
             }
             return View();
         }
+
+        public ActionResult ViewUsers() {
+            return RedirectToAction("Index", "User");
+        }
+
     }
 }
