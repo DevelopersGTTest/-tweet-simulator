@@ -25,7 +25,7 @@
 <!--divider-->
 <div style="height: 30px" ></div>
 <!--divider-->
-<div class="container" style="background: white; top: 100px; height: 600px; width: 910px; border-radius: 10px;" >
+<div class="container" style="background: white; top: 100px; width: 910px; border-radius: 10px;" >
     <div class="container">
         <h2>Usuarios</h2>
         <a href="/User/NewUser" class="btn btn-success">Crear un nuevo registro</a>
@@ -38,6 +38,7 @@
                 <th scope="col">Apellido</th>
                 <th scope="col">Username</th>
                 <th scope="col">Rol</th>
+                <th scope="col">Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -58,6 +59,10 @@
                             <td>digitador</td>
                         }
                     }
+                    <td>
+                        <a  style="font-size: 8px; padding: 2px 8px; margin: 2px; width: -webkit-fill-available;" class="btn btn-warning" href="/User/Edit/@u.id_user" >Editar</a>
+                        <a  style="font-size: 8px; padding: 2px 8px; margin: 2px; width: -webkit-fill-available;" class="btn btn-danger" href="~/User/DeleteUser?id_user=@u.id_user">Eliminar</a>
+                    </td>
                 </tr>
             }
         </tbody>

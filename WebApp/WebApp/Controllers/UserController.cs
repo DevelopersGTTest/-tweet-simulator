@@ -74,5 +74,16 @@ namespace WebApp.Controllers
 
         }
 
+        [HttpGet]
+        public ActionResult DeleteUser(int id_user) {
+            using (PARROQUIAEntities db = new PARROQUIAEntities())
+            {
+                var userDb = db.USUARIOs.Find(id_user);
+                db.USUARIOs.Remove(userDb);
+                db.SaveChanges();
+            }
+            return Redirect("Index");
+        }
+
     }
 }
