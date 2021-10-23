@@ -59,7 +59,7 @@
                         }
                     }
                     <td>
-                        <a  style="font-size: 8px; padding: 2px 8px; margin: 2px; width: -webkit-fill-available;" class="btn btn-warning" href="/User/EditUser?id_user=@u.id_user" >Editar</a>
+                        <a  style="font-size: 8px; padding: 2px 8px; margin: 2px; width: -webkit-fill-available;" target="_blank" class="btn btn-warning" href="/User/EditUser?id_user=@u.id_user" >Editar</a>
                         @{
                             string currentUserId = Session["UserId"].ToString();
                             if (int.Parse(currentUserId) != u.id_user)

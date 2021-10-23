@@ -256,6 +256,7 @@
     <Content Include="Views\User\EditUser.cshtml" />
     <Content Include="Views\Bautizo\Index.cshtml" />
     <Content Include="Views\Bautizo\NewBautizo.cshtml" />
+    <Content Include="Views\Bautizo\ReporteBautizo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

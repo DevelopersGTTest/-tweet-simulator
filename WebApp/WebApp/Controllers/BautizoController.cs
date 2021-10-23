@@ -96,5 +96,10 @@ namespace WebApp.Controllers
             return Redirect("Index");
         }
 
+        [HttpGet]
+        public ActionResult ReporteBautizo(int id_bautizo) {
+            return View();
+        }
+
     }
 }
