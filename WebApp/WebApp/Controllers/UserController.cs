@@ -89,6 +89,7 @@ namespace WebApp.Controllers
 
 
                 USUARIO userDb = db.USUARIOs.Find(id_user);
+                model.id_user = userDb.id_usuario;
                 model.nombre = userDb.nombre;
                 model.apellido = userDb.apellido;
                 model.username = userDb.username;
@@ -99,14 +100,14 @@ namespace WebApp.Controllers
         }
 
         [HttpPost]
-        public ActionResult ApplyEditUser(string name, string lastname, string username, string password, string rol)
+        public ActionResult ApplyEditUser(string name, string lastname, string username, string password, string rol, string id_user)
         {
             try
             {
                 using (PARROQUIAEntities db = new PARROQUIAEntities())
                 {
 
-                    USUARIO userDb = db.USUARIOs.Find(int.Parse(Session["UserId"].ToString()));
+                    USUARIO userDb = db.USUARIOs.Find(int.Parse(id_user));
                     userDb.id_rol = int.Parse(rol);
                     userDb.nombre = name;
                     userDb.apellido = lastname;
