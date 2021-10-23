@@ -98,6 +98,34 @@ namespace WebApp.Controllers
                 return View(model);
         }
 
+        [HttpPost]
+        public ActionResult ApplyEditUser(string name, string lastname, string username, string password, string rol)
+        {
+            try
+            {
+                using (PARROQUIAEntities db = new PARROQUIAEntities())
+                {
+
+                    USUARIO userDb = db.USUARIOs.Find(int.Parse(Session["UserId"].ToString()));
+                    userDb.id_rol = int.Parse(rol);
+                    userDb.nombre = name;
+                    userDb.apellido = lastname;
+                    userDb.fecha_creacion = DateTime.Parse("2021-11-24 12:35:29.123");
+                    userDb.username = username;
+                    userDb.password = password;
+
+                    db.USUARIOs.Attach(userDb);
+                    db.Entry(userDb).State = System.Data.Entity.EntityState.Modified;
+                    db.SaveChanges();
+                }
+
+            } catch (Exception ex) {
+
+            }
+            return Redirect("Index");
+
+        }
+
 
         [HttpGet]
         public ActionResult DeleteUser(int id_user) {

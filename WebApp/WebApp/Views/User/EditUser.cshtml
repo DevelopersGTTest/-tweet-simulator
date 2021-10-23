@@ -25,7 +25,7 @@
 <div style="height: 30px"></div>
 <!--divider-->
 <div class="container" style="background: white; top: 100px; height: 600px; width: 910px; border-radius: 10px;">
-    <form action="/User/SaveUser" method="post">
+    <form action="/User/ApplyEditUser" method="post">
         <div class="mb-3">
             <label class="form-label">Nombre</label>
             @{
@@ -35,7 +35,7 @@
         <div class="mb-3">
             <label class="form-label">Apellido</label>
             @{
-                <input type="text" name="name" value="@Model.apellido" class="form-control">
+                <input type="text" name="lastname" value="@Model.apellido" class="form-control">
             }
         </div>
         <div class="mb-3">
