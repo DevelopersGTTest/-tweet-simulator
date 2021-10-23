@@ -199,6 +199,7 @@
     <Compile Include="Models\USUARIO.cs">
       <DependentUpon>DB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ViewModels\BautizoViewMode.cs" />
     <Compile Include="Models\ViewModels\ListBautizoViewModel.cs" />
     <Compile Include="Models\ViewModels\ListUserViewModel.cs" />
     <Compile Include="Models\ViewModels\UserViewModel.cs" />

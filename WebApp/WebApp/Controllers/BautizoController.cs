@@ -98,7 +98,20 @@ namespace WebApp.Controllers
 
         [HttpGet]
         public ActionResult ReporteBautizo(int id_bautizo) {
-            return View();
+            BautizoViewMode model = new BautizoViewMode();
+            using (PARROQUIAEntities db = new PARROQUIAEntities()) {
+
+                BAUTIZO bautizoDb = db.BAUTIZOes.Find(id_bautizo);
+                model.id_usuario_registro = bautizoDb.id_usuario_registro;
+                model.nombre_bautizado = bautizoDb.nombre_bautizado;
+                model.fecha_bautizo = bautizoDb.fecha_bautizo;
+                model.nombre_padre = bautizoDb.nombre_padre;
+                model.nombre_madre = bautizoDb.nombre_madre;
+                model.nombres_padrinos = bautizoDb.nombres_padrinos;
+                model.fecha_nacimiento_bautizado = bautizoDb.fecha_nacimiento_bautizado;
+
+            }
+            return View(model);
         }
 
     }

@@ -1,4 +1,5 @@
-﻿
+﻿@model  WebApp.Models.ViewModels.BautizoViewMode 
+
 @{
     ViewBag.Title = "ReporteBautizo";
 }
@@ -31,63 +32,35 @@
                     </div>
                     <div class="divTableRow">
                         <div class="divTableCell2" style="/* border-bottom: 1px solid #d0cfcf; *//* font-family: Arial; */text-transform: uppercase;font-size: 14px;/* border: 1px solid black; *//* border-radius: 5px; *//* text-align: -webkit-right; *//* text-rendering: initial; */text-align: left;width: 20%;">Nombres:</div>
-                        <div class="divTableCell2" style="border-bottom: 1px solid #d0cfcf;/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;/* border: 1px solid black; *//* border-radius: 5px; */border-radius: 15px;"><?= $pdf_nom ?></div>
+                        <div class="divTableCell2" style="border-bottom: 1px solid #d0cfcf;/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;/* border: 1px solid black; *//* border-radius: 5px; */border-radius: 15px;">@Model.nombre_bautizado</div>
 
                     </div>
                     <div class="divTableRow">
                         <div class="divTableCell2" style="/* border-bottom: 1px solid #d0cfcf; *//* font-family: Arial; */text-transform: uppercase;font-size: 14px;/* text-align: right; */text-align: left;">Hijo(a) de:</div>
-                        <div class="divTableCell2" style="border-bottom: 1px solid #d0cfcf;/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;/* border-bottom: 2px solid #000000; */border-radius: 15px;"><?= $pdf_pa  ?> / <?= $pdf_ma ?></div>
+                        <div class="divTableCell2" style="border-bottom: 1px solid #d0cfcf;/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;/* border-bottom: 2px solid #000000; */border-radius: 15px;">@Model.nombre_padre / @Model.nombre_madre ></div>
 
                     </div>
                     <div class="divTableRow">
                         <div style="/* font-family: Arial; */text-transform: uppercase;font-size: 14px;/* text-align: right; */text-align: left;" class="divTableCell2">Padrinos:</div>
-                        <div class="divTableCell2" style="/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;border-bottom: 1px solid #d0cfcf;border-radius: 15px;"><?= $pdf_pad ?></div>
+                        <div class="divTableCell2" style="/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;border-bottom: 1px solid #d0cfcf;border-radius: 15px;">@Model.nombres_padrinos</div>
                     </div><div class="divTableRow">
                         <div class="divTableCell2" style="/* border-bottom: 1px solid #d0cfcf; *//* font-family: Arial; */text-transform: uppercase;font-size: 14px;/* text-align: right; */text-align: left;">FECHA DE NACIMIENTO:</div>
-                        <div class="divTableCell2" style="border-bottom: 1px solid #d0cfcf;/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;/* border-bottom: 2px solid #000000; */border-radius: 15px;border-bottom: 1px solid #d0cfcf;/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;/* border: 1px solid black; *//* border-radius: 5px; */border-radius: 15px;line-height: unset;padding-top: 28px;padding-bottom: 0px;"><?= date_format($pdf_fn,"d/m/Y") ?></div>
+                        <div class="divTableCell2" style="border-bottom: 1px solid #d0cfcf;/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;/* border-bottom: 2px solid #000000; */border-radius: 15px;border-bottom: 1px solid #d0cfcf;/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;/* border: 1px solid black; *//* border-radius: 5px; */border-radius: 15px;line-height: unset;padding-top: 28px;padding-bottom: 0px;">@Model.fecha_nacimiento_bautizado</div>
 
                     </div>
                     <div class="divTableRow">
                         <div style="/* font-family: Arial; */text-transform: uppercase;font-size: 14px;/* text-align: right; */text-align: left;" class="divTableCell2">FECHA DE BAUTISMO:</div>
-                        <div class="divTableCell2" style="/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;border-bottom: 1px solid #d0cfcf;border-radius: 15px;border-bottom: 1px solid #d0cfcf;/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;/* border: 1px solid black; *//* border-radius: 5px; */border-radius: 15px;line-height: unset;padding-top: 28px;padding-bottom: 0px;"><?= date_format($pdf_fb,"d/m/Y")  ?></div>
+                        <div class="divTableCell2" style="/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;border-bottom: 1px solid #d0cfcf;border-radius: 15px;border-bottom: 1px solid #d0cfcf;/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;/* border: 1px solid black; *//* border-radius: 5px; */border-radius: 15px;line-height: unset;padding-top: 28px;padding-bottom: 0px;">@Model.fecha_bautizo</div>
                     </div>
 
-                    <div class="divTableRow">
-                        <div class="divTableCell2" style="/* border-bottom: 1px solid #d0cfcf; *//* font-family: Arial; */text-transform: uppercase;font-size: 14px;/* border: 1px solid black; *//* border-radius: 5px; *//* text-align: left; *//* text-rendering: initial; */text-align: left;">Anotación marginal:</div>
-                        <div class="divTableCell2" style="border-bottom: 1px solid #d0cfcf;/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;/* border: 1px solid black; *//* border-radius: 5px; */border-radius: 15px;line-height: unset;padding-top: 28px;padding-bottom: 0px;"><?= $pdf_ob ?> .</div>
-                    </div>
+
                     <div class="divTableRow">
                         <div class="divTableCell2" style="/* border-bottom: 1px solid #d0cfcf; *//* font-family: Arial; */text-transform: uppercase;font-size: 14px;/* text-align: right; */text-align: left;">Guatemala:</div>
-                        <div class="divTableCell2" style="border-bottom: 1px solid #d0cfcf;/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;/* border-bottom: 2px solid #000000; */border-radius: 15px;"><?= $currentdate ?></div>
+                        <div class="divTableCell2" style="border-bottom: 1px solid #d0cfcf;/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;/* border-bottom: 2px solid #000000; */border-radius: 15px;">@DateTime.Now</div>
                     </div>
                 </div>
             </div>
             <br>
-            <div align="center" style="width: 65%;">
-                <div class="divTable" align="center">
-                    <div class="divTableBody" align="center">
-                        <div class="divTableRow" align="center">
-                            <div style="/* font-family: Arial; */text-transform: uppercase;font-size: 14px;text-align: right;/* text-align: left; */" class="divTableCell2">&nbsp;Libro:</div>
-                            <div class="divTableCell2" style="/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;border-bottom: 1px solid #d0cfcf;border-radius: 15px;/* text-align: left; */">
-                                <?= $pdf_li ?>
-                            </div>
-                            <div style="/* font-family: Arial; */text-transform: uppercase;font-size: 14px;text-align: right;/* text-align: left; */" class="divTableCell2">&nbsp;Folio:</div>
-                            <div class="divTableCell2" style="/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;border-bottom: 1px solid #d0cfcf;border-radius: 15px;"><?= $pdf_fo ?></div>
-                            <div style="/* font-family: Arial; */text-transform: uppercase;font-size: 14px;text-align: right;/* text-align: left; */" class="divTableCell2">&nbsp;Partida:</div>
-                            <div class="divTableCell2" style="/* border-left: 1px solid #d0cfcf; */font-family: Arial;font-size: 14px;border-bottom: 1px solid #d0cfcf;border-radius: 15px;"><?= $pdf_par ?></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
 
             <!--<div class="divTable" style="/* width: 100%; *//* border: 1px solid #ffffff; *//* border-radius: 5px; */">
                 <div class="divTableBody">
