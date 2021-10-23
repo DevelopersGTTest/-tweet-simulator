@@ -48,9 +48,6 @@ namespace WebApp.Controllers
             return RedirectToAction("Index", "Panel");
         }
 
-
-        // DeleteMatrimonio?id_matrimonio=@m.id_matrimonio
-
         [HttpGet]
         public ActionResult DeleteMatrimonio(int id_matrimonio)
         {
@@ -61,6 +58,29 @@ namespace WebApp.Controllers
                 db.SaveChanges();
             }
             return Redirect("Index");
+        }
+
+        [HttpGet]
+        public ActionResult ReporteMatrimonio(int id_matrimonio)
+        {
+            MatrimonioViewModel model = new MatrimonioViewModel();
+            using (PARROQUIAEntities db = new PARROQUIAEntities())
+            {
+
+                MATRIMONIO matrimonioDb = db.MATRIMONIOs.Find(id_matrimonio);
+
+                model.id_matrimonio = matrimonioDb.id_matrimonio;
+                model.id_usuario_registro = matrimonioDb.id_usuario_registro;
+                model.nombre_esposo = matrimonioDb.nombre_esposo;
+                model.fecha_nacimiento_esposo = matrimonioDb.fecha_nacimiento_esposo;
+                model.profesion_esposo = matrimonioDb.profesion_esposo;
+                model.nombre_esposa = matrimonioDb.nombre_esposa;
+                model.fecha_nacimiento_esposa = matrimonioDb.fecha_nacimiento_esposa;
+                model.presion_esposa = matrimonioDb.presion_esposa;
+                model.fecha_matrimonio = matrimonioDb.fecha_matrimonio;
+                model.nombre_padrinos = matrimonioDb.nombre_padrinos;
+            }
+            return View(model);
         }
 
 

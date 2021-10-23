@@ -207,6 +207,7 @@
     <Compile Include="Models\ViewModels\ListBautizoViewModel.cs" />
     <Compile Include="Models\ViewModels\ListMatrimonioViewModel.cs" />
     <Compile Include="Models\ViewModels\ListUserViewModel.cs" />
+    <Compile Include="Models\ViewModels\MatrimonioViewModel.cs" />
     <Compile Include="Models\ViewModels\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -264,6 +265,7 @@
     <Content Include="Views\Bautizo\NewBautizo.cshtml" />
     <Content Include="Views\Bautizo\ReporteBautizo.cshtml" />
     <Content Include="Views\Matrimonio\Index.cshtml" />
+    <Content Include="Views\Matrimonio\ReporteMatrimonio.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
