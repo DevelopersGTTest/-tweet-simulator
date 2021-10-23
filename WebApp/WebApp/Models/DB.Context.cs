@@ -28,5 +28,6 @@ namespace WebApp.Models
         public virtual DbSet<ROL> ROLs { get; set; }
         public virtual DbSet<USUARIO> USUARIOs { get; set; }
         public virtual DbSet<BAUTIZO> BAUTIZOes { get; set; }
+        public virtual DbSet<MATRIMONIO> MATRIMONIOs { get; set; }
     }
 }

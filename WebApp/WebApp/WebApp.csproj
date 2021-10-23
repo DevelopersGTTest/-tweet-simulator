@@ -170,6 +170,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BautizoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MatrimonioController.cs" />
     <Compile Include="Controllers\PanelController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
@@ -193,6 +194,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\MATRIMONIO.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\ROL.cs">
       <DependentUpon>DB.tt</DependentUpon>
     </Compile>
@@ -201,6 +205,7 @@
     </Compile>
     <Compile Include="Models\ViewModels\BautizoViewMode.cs" />
     <Compile Include="Models\ViewModels\ListBautizoViewModel.cs" />
+    <Compile Include="Models\ViewModels\ListMatrimonioViewModel.cs" />
     <Compile Include="Models\ViewModels\ListUserViewModel.cs" />
     <Compile Include="Models\ViewModels\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -258,6 +263,7 @@
     <Content Include="Views\Bautizo\Index.cshtml" />
     <Content Include="Views\Bautizo\NewBautizo.cshtml" />
     <Content Include="Views\Bautizo\ReporteBautizo.cshtml" />
+    <Content Include="Views\Matrimonio\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

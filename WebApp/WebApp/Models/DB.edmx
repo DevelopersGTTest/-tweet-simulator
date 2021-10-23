@@ -18,6 +18,21 @@
           <Property Name="nombres_padrinos" Type="varchar" MaxLength="256" Nullable="false" />
           <Property Name="fecha_bautizo" Type="varchar" MaxLength="128" Nullable="false" />
         </EntityType>
+        <EntityType Name="MATRIMONIO">
+          <Key>
+            <PropertyRef Name="id_matrimonio" />
+          </Key>
+          <Property Name="id_matrimonio" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_usuario_registro" Type="int" Nullable="false" />
+          <Property Name="nombre_esposo" Type="varchar" MaxLength="128" Nullable="false" />
+          <Property Name="fecha_nacimiento_esposo" Type="varchar" MaxLength="128" Nullable="false" />
+          <Property Name="profesion_esposo" Type="varchar" MaxLength="32" />
+          <Property Name="nombre_esposa" Type="varchar" MaxLength="128" Nullable="false" />
+          <Property Name="fecha_nacimiento_esposa" Type="varchar" MaxLength="128" Nullable="false" />
+          <Property Name="presion_esposa" Type="varchar" MaxLength="32" />
+          <Property Name="fecha_matrimonio" Type="varchar" MaxLength="128" Nullable="false" />
+          <Property Name="nombre_padrinos" Type="varchar" MaxLength="256" Nullable="false" />
+        </EntityType>
         <EntityType Name="ROL">
           <Key>
             <PropertyRef Name="id_rol" />
@@ -52,6 +67,7 @@
         </Association>
         <EntityContainer Name="PARROQUIAModelStoreContainer">
           <EntitySet Name="BAUTIZO" EntityType="Self.BAUTIZO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MATRIMONIO" EntityType="Self.MATRIMONIO" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ROL" EntityType="Self.ROL" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="USUARIO" EntityType="Self.USUARIO" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK__USUARIO__id_rol__4316F928" Association="Self.FK__USUARIO__id_rol__4316F928">
@@ -105,6 +121,7 @@
             <End Role="USUARIO" EntitySet="USUARIOs" />
           </AssociationSet>
           <EntitySet Name="BAUTIZOes" EntityType="PARROQUIAModel.BAUTIZO" />
+          <EntitySet Name="MATRIMONIOs" EntityType="PARROQUIAModel.MATRIMONIO" />
         </EntityContainer>
         <EntityType Name="BAUTIZO">
           <Key>
@@ -118,6 +135,21 @@
           <Property Name="nombre_madre" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
           <Property Name="nombres_padrinos" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="false" />
           <Property Name="fecha_bautizo" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="MATRIMONIO">
+          <Key>
+            <PropertyRef Name="id_matrimonio" />
+          </Key>
+          <Property Name="id_matrimonio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_usuario_registro" Type="Int32" Nullable="false" />
+          <Property Name="nombre_esposo" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="fecha_nacimiento_esposo" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="profesion_esposo" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+          <Property Name="nombre_esposa" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="fecha_nacimiento_esposa" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="presion_esposa" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+          <Property Name="fecha_matrimonio" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="nombre_padrinos" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -158,6 +190,22 @@
                 <ScalarProperty Name="nombre_bautizado" ColumnName="nombre_bautizado" />
                 <ScalarProperty Name="id_usuario_registro" ColumnName="id_usuario_registro" />
                 <ScalarProperty Name="id_bautizo" ColumnName="id_bautizo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MATRIMONIOs">
+            <EntityTypeMapping TypeName="PARROQUIAModel.MATRIMONIO">
+              <MappingFragment StoreEntitySet="MATRIMONIO">
+                <ScalarProperty Name="nombre_padrinos" ColumnName="nombre_padrinos" />
+                <ScalarProperty Name="fecha_matrimonio" ColumnName="fecha_matrimonio" />
+                <ScalarProperty Name="presion_esposa" ColumnName="presion_esposa" />
+                <ScalarProperty Name="fecha_nacimiento_esposa" ColumnName="fecha_nacimiento_esposa" />
+                <ScalarProperty Name="nombre_esposa" ColumnName="nombre_esposa" />
+                <ScalarProperty Name="profesion_esposo" ColumnName="profesion_esposo" />
+                <ScalarProperty Name="fecha_nacimiento_esposo" ColumnName="fecha_nacimiento_esposo" />
+                <ScalarProperty Name="nombre_esposo" ColumnName="nombre_esposo" />
+                <ScalarProperty Name="id_usuario_registro" ColumnName="id_usuario_registro" />
+                <ScalarProperty Name="id_matrimonio" ColumnName="id_matrimonio" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
