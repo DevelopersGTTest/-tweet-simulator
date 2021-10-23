@@ -1,0 +1,65 @@
+﻿@model  List<WebApp.Models.ViewModels.ListBautizoViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light white lighten-3 sticky ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#"> @ViewBag.Message <span class="sr-only">(current)</span></a>
+            </div>
+        </div>
+        <form class="form-inline" action="#">
+            <a href="/Bautizo/BackPanel" class="btn btn-danger btn-sm my-0" type="submit">Regresar</a>
+        </form>
+
+    </nav>
+</header>
+
+<!--divider-->
+<div style="height: 30px"></div>
+<!--divider-->
+<div class="container" style="background: white; top: 100px; width: 910px; border-radius: 10px;">
+    <div class="container">
+        <h2>Bautizos</h2>
+        <a href="/Bautizo/NewBautizo" class="btn btn-success">Crear un nuevo registro</a>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nombre Bautizado</th>
+                <th scope="col">Fecha Bautizo</th>
+                <th scope="col">Nombres Padrinos</th>
+                <th scope="col">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var b in Model)
+            {
+                <tr>
+                    <th scope="row">@b.id_bautizo</th>
+                    <td>@b.nombre_bautizado </td>
+                    <td>@b.fecha_bautizo</td>
+                    <td>@b.nombres_padrinos</td>                   
+                    <td>
+                        @{
+                            string rol = Session["RolId"].ToString();
+                            if (int.Parse(rol) == 1)
+                            {
+                                <a style="font-size: 8px; padding: 2px 8px; margin: 2px; width: -webkit-fill-available;" class="btn btn-info" href="/User/EditUser?id_user=@b.">Reporte</a>
+                            }
+                        }
+                        <a style="font-size: 8px; padding: 2px 8px; margin: 2px; width: -webkit-fill-available;" class="btn btn-danger" href="~/User/DeleteUser?id_user=@b.id_bautizo">Eliminar</a>
+                    </td>
+                </tr>
+                            }
+        </tbody>
+    </table>
+</div>
