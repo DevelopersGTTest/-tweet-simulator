@@ -75,6 +75,30 @@ namespace WebApp.Controllers
         }
 
         [HttpGet]
+        public ActionResult EditUser(int id_user) {
+            UserViewModel model = new UserViewModel();
+            using (PARROQUIAEntities db = new PARROQUIAEntities())
+            {
+
+                USUARIO userSession = (USUARIO)Session["User"];
+                if (userSession != null)
+                {
+                    ViewBag.Message = "Bienvenido: " + Convert.ToString(userSession.username);
+                }
+
+
+                USUARIO userDb = db.USUARIOs.Find(id_user);
+                model.nombre = userDb.nombre;
+                model.apellido = userDb.apellido;
+                model.username = userDb.username;
+                model.password = userDb.password;
+                model.id_rol = userDb.id_rol;
+            }
+                return View(model);
+        }
+
+
+        [HttpGet]
         public ActionResult DeleteUser(int id_user) {
             using (PARROQUIAEntities db = new PARROQUIAEntities())
             {
