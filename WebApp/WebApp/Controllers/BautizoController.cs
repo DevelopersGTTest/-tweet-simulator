@@ -46,5 +46,55 @@ namespace WebApp.Controllers
             return RedirectToAction("Index", "Panel");
         }
 
+        public ActionResult NewBautizo() {
+            using (PARROQUIAEntities db = new PARROQUIAEntities())
+            {
+                USUARIO userSession = (USUARIO)Session["User"];
+                if (userSession != null)
+                {
+                    Session["RolId"] = userSession.id_rol;
+                    ViewBag.Message = "Bienvenido: " + Convert.ToString(userSession.username);
+                }
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult SaveBautizo(
+            string nombre_bautizado, string fecha_nacimiento_bautizado,
+            string nombre_padre, string nombre_madre, string nombres_padrinos, string fecha_bautizo)
+        {
+            using (PARROQUIAEntities db = new PARROQUIAEntities())
+            {
+                USUARIO userSession = (USUARIO)Session["User"];
+                Session["RolId"] = userSession.id_rol;
+
+                BAUTIZO newBautizo = new BAUTIZO();
+                newBautizo.id_usuario_registro = 1;
+                newBautizo.nombre_bautizado = nombre_bautizado;
+                newBautizo.fecha_bautizo = fecha_bautizo;
+                newBautizo.nombre_padre = nombre_padre;
+                newBautizo.nombre_madre = nombre_madre;
+                newBautizo.nombres_padrinos = nombres_padrinos;
+                newBautizo.fecha_nacimiento_bautizado = fecha_nacimiento_bautizado;
+
+                db.BAUTIZOes.Add(newBautizo);
+                db.SaveChanges();
+            }
+            return Redirect("Index");
+        }
+
+        [HttpGet]
+        public ActionResult DeleteBautizo(int id_bautizo)
+        {
+            using (PARROQUIAEntities db = new PARROQUIAEntities())
+            {
+                var bautizoDb = db.BAUTIZOes.Find(id_bautizo);
+                db.BAUTIZOes.Remove(bautizoDb);
+                db.SaveChanges();
+            }
+            return Redirect("Index");
+        }
+
     }
 }

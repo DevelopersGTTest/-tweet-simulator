@@ -25,12 +25,8 @@ namespace WebApp.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<BAUTIZO> BAUTIZOes { get; set; }
-        public virtual DbSet<CONFIRMACION> CONFIRMACIONs { get; set; }
-        public virtual DbSet<MATRIMONIO> MATRIMONIOs { get; set; }
         public virtual DbSet<ROL> ROLs { get; set; }
-        public virtual DbSet<SOLICITUD> SOLICITUDs { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<USUARIO> USUARIOs { get; set; }
+        public virtual DbSet<BAUTIZO> BAUTIZOes { get; set; }
     }
 }

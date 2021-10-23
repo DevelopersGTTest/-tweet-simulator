@@ -53,10 +53,10 @@
                             string rol = Session["RolId"].ToString();
                             if (int.Parse(rol) == 1)
                             {
-                                <a style="font-size: 8px; padding: 2px 8px; margin: 2px; width: -webkit-fill-available;" class="btn btn-info" href="/User/EditUser?id_user=@b.">Reporte</a>
+                                <a style="font-size: 8px; padding: 2px 8px; margin: 2px; width: -webkit-fill-available;" class="btn btn-info" href="/Bautizo/EditUser?id_bautizo=@b.id_bautizo">Reporte</a>
                             }
                         }
-                        <a style="font-size: 8px; padding: 2px 8px; margin: 2px; width: -webkit-fill-available;" class="btn btn-danger" href="~/User/DeleteUser?id_user=@b.id_bautizo">Eliminar</a>
+                        <a style="font-size: 8px; padding: 2px 8px; margin: 2px; width: -webkit-fill-available;" class="btn btn-danger" href="~/Bautizo/DeleteBautizo?id_bautizo=@b.id_bautizo">Eliminar</a>
                     </td>
                 </tr>
                             }

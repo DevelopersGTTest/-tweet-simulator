@@ -14,14 +14,6 @@ namespace WebApp.Models
     
     public partial class USUARIO
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public USUARIO()
-        {
-            this.BAUTIZOes = new HashSet<BAUTIZO>();
-            this.CONFIRMACIONs = new HashSet<CONFIRMACION>();
-            this.MATRIMONIOs = new HashSet<MATRIMONIO>();
-        }
-    
         public int id_usuario { get; set; }
         public int id_rol { get; set; }
         public string nombre { get; set; }
@@ -30,12 +22,6 @@ namespace WebApp.Models
         public string username { get; set; }
         public string password { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BAUTIZO> BAUTIZOes { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CONFIRMACION> CONFIRMACIONs { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<MATRIMONIO> MATRIMONIOs { get; set; }
         public virtual ROL ROL { get; set; }
     }
 }

@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "NewBautizo";
+}
+
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light white lighten-3 sticky ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#"> @ViewBag.Message <span class="sr-only">(current)</span></a>
+            </div>
+        </div>
+        <form class="form-inline" action="#">
+            <a href="/Bautizo/BackPanel" class="btn btn-danger btn-sm my-0" type="submit">Regresar</a>
+        </form>
+
+    </nav>
+</header>
+
+<!--divider-->
+<div style="height: 30px"></div>
+<!--divider-->
+<div class="container" style="background: white; top: 100px; width: 910px; border-radius: 10px;">
+    <form action="/Bautizo/SaveBautizo" method="post">
+        <div class="mb-3">
+            <label class="form-label">Nombre Bautizado</label>
+            <input type="text" name="nombre_bautizado" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Fecha Nacimiento Bautizado</label>
+            <input type="date" name="fecha_nacimiento_bautizado" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Nombre Padre</label>
+            <input type="text" name="nombre_padre" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Nombre Madre</label>
+            <input type="text" name="nombre_madre" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Nombres Padrinos</label>
+            <input type="text" name="nombres_padrinos" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Fecha Bautizo</label>
+            <input type="date" name="fecha_bautizo" class="form-control">
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Guardar</button>
+    </form>
+</div>
