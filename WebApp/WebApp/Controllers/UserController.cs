@@ -20,6 +20,7 @@ namespace WebApp.Controllers
                 USUARIO userSession = (USUARIO)Session["User"];
                 if (userSession != null)
                 {
+                    Session["UserId"] = userSession.id_usuario;
                     ViewBag.Message = "Bienvenido: " + Convert.ToString(userSession.username);
                 }
 
