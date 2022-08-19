@@ -178,14 +178,11 @@ namespace DXWebApplication.WebForms.Procesos.Factura
 
         protected void dxGridDetalleDeleting(object sender, DevExpress.Web.Data.ASPxDataDeletingEventArgs e)
         {
-
             int idDetalle = int.Parse(e.Keys["ID"].ToString());
             DataTable dt = Session["PedidoDetalle"] as DataTable;
-            DataRow fila = dt.NewRow();
 
             e.Cancel = true;
-            dt.Rows.Find(idDetalle).Delete(); /// delete
-
+            dt.Rows.Find(idDetalle).Delete(); /// easy way for deleting row using data table control
            
             Session["PedidoDetalle"] = dt;
         }
